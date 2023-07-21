@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.imagecompressworker"
-        minSdk 24
+        minSdk 23
         targetSdk 33
         versionCode 1
         versionName "1.0"
@@ -61,7 +61,8 @@ dependencies {
     debugImplementation "androidx.compose.ui:ui-tooling:$compose_ui_version"
     debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_ui_version"
 
-    implementation 'android.work:work-runtime-ktx:2.8.1'
-    implementation 'io.coil-kt:coil-compose:2.4.0'
+    implementation "androidx.work:work-runtime-ktx:2.8.1"
+    implementation "io.coil-kt:coil-compose:2.4.0"
+    implementation "androidx.compose.runtime:runtime-livedata:1.4.3"
 
 }
